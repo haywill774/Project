@@ -24,7 +24,7 @@ public class Project{
             preparedStatement = connection.prepareStatement("INSERT INTO Project_one (name, email, age, location) " +
                     "VALUES(?, ?,?,?)");
 
-            for (int i=0; i<2; i++) {
+            for (int i=0; i<10; i++) {
                 String name, email, location;
 
                     System.out.println("please enter your Name: ");
@@ -45,7 +45,7 @@ public class Project{
                 count++;
             }
 
-//            PreparedStatement deleteStatement = connection.prepareStatement("DELETE FROM project WHERE name=?");
+//            PreparedStatement deleteStatement = connection.prepareStatement("DELETE FROM Project_one WHERE name=?");
 //            System.out.println("please enter your name: ");
 //            String name = scanner.nextLine();
 //            deleteStatement.setString(1,name);
@@ -62,10 +62,10 @@ public class Project{
            }
 
 
-//            PreparedStatement updateStatement = connection.prepareStatement("UPDATE october.Project_one SET designation = \"lagos\" WHERE name = ?");
-//            System.out.println("please enter name: ");
-//            String name = scanner.nextLine();
-//            updateStatement.setString(1,name);
+//            PreparedStatement updateStatement = connection.prepareStatement("UPDATE october.Project_one SET designation = \"delta\" WHERE location = ?");
+//            System.out.println("please enter location: ");
+//            String location = scanner.nextLine();
+//            updateStatement.setString(1,location);
 //            updateStatement.execute();
 
 //            PreparedStatement populateStatement = connection.prepareStatement("ALTER TABLE october.Project_one \n" +
